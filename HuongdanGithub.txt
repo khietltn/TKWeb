@@ -1,0 +1,5 @@
+1. Đăng ký tài khoản Github (gmail -> xác thực gmail)
+2. Tải & đăng nhập Github Desktop (login)
+3. Tạo repo 
+4. Cài đặt repo
+5. Học nhanh các lệnh: commit, push, pull, ...
