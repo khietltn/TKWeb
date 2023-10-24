@@ -4,3 +4,4 @@
 4. Cài đặt repo
 5. Học nhanh các lệnh: commit, push, pull, ...
 6.Chào các bạn
+github.com/join
