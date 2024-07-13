@@ -1,0 +1,68 @@
+<!DOCTYPE html> 
+<html> 
+<head>
+<style>
+        body {
+            text-align: center;
+        }
+
+        #GFG {
+            width: 550px;
+            height: 200px;
+            margin: auto;
+            background-size: contain;
+        }
+
+        .image {    
+            background-image: url(
+'https://www.geeksforgeeks.org/wp-content/uploads/javascript.png');
+        }
+
+        .new-background {
+            background-image: url(
+'https://media.geeksforgeeks.org/wp-content/cdn-uploads/20210203170945/HTML-Tutorials.png');
+        }
+    </style>
+</head>
+<body> 
+	<center> 
+		<h1 style="color:green">GeeksforGeeks</h1> 
+		<h2 id="GFG" class="image">HTML DOM src Property</h2> 
+
+		<button onclick="my_Audio()" type="button"> Change Audio</button> 
+		<button onclick="changeBackgroundImage()">Change Background Image</button>
+		<br> 
+
+		<audio id="myAudio" controls autoplay> 
+			<source id="mp4_src" src= 
+"https://media.geeksforgeeks.org/wp-content/uploads/20190531165842/Recording1514.ogg"
+					type="audio/mp3" > </audio> 
+		<script>
+			var t=0 , h=0;
+			function my_Audio() { 
+				debugger;
+				t= t+1 ;
+				if( t%2 ==0)
+				document.getElementById("mp4_src").src = 
+"https://media.geeksforgeeks.org/wp-content/uploads/20190531165842/Recording1514.ogg"; 
+				else
+				document.getElementById("mp4_src").src = 
+"https://media.geeksforgeeks.org/wp-content/uploads/20190625153922/frog.mp3"; 
+				document.getElementById("myAudio").load(); 
+			}
+			function changeBackgroundImage() {
+				h = h + 1;
+				let headingID = document.getElementById("GFG");
+				if( h% 2 == 1){
+					headingID.classList.remove("image");
+					headingID.classList.add("new-background");
+				}else{
+					headingID.classList.remove("new-background");
+					headingID.classList.add("image");
+				}
+			}			
+		</script> 
+	</center> 
+</body> 
+
+</html> 
