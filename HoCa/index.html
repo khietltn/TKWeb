@@ -32,7 +32,6 @@
 		<button onclick="my_Audio()" type="button"> Change Audio</button> 
 		<button onclick="changeBackgroundImage()">Change Background Image</button>
 		<br> 
-
 		<audio id="myAudio" controls autoplay> 
 			<source id="mp4_src" src= 
 "https://media.geeksforgeeks.org/wp-content/uploads/20190531165842/Recording1514.ogg"
@@ -40,7 +39,6 @@
 		<script>
 			var t=0 , h=0;
 			function my_Audio() { 
-				debugger;
 				t= t+1 ;
 				if( t%2 ==0)
 				document.getElementById("mp4_src").src = 
